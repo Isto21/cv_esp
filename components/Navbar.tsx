@@ -1,15 +1,15 @@
 'use client';
 
+import { Code2, Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { Menu, X, Code2 } from 'lucide-react';
 
 const NAV_LINKS = [
-  { href: '#hero', label: 'Inicio' },
-  { href: '#about', label: 'Sobre mí' },
-  { href: '#experience', label: 'Experiencia' },
-  { href: '#skills', label: 'Habilidades' },
-  { href: '#projects', label: 'Proyectos' },
-  { href: '#contact', label: 'Contacto' },
+  { href: '#hero', label: 'Home' },
+  { href: '#about', label: 'About' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Skills' },
+  { href: '#projects', label: 'Projects' },
+  { href: '#contact', label: 'Contact' },
 ];
 
 export default function Navbar() {
@@ -37,11 +37,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
           ? 'bg-[#080d1a]/80 backdrop-blur-xl border-b border-blue-500/10'
           : 'bg-transparent'
-      }`}
+        }`}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -61,11 +60,10 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${
-                  activeSection === link.href
+                className={`px-3 py-2 text-sm font-medium rounded-lg transition-all duration-200 ${activeSection === link.href
                     ? 'text-blue-400 bg-blue-500/10'
                     : 'text-slate-300 hover:text-blue-400 hover:bg-blue-500/5'
-                }`}
+                  }`}
               >
                 {link.label}
               </a>
@@ -91,11 +89,10 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`px-4 py-3 text-sm font-medium rounded-lg transition-all ${
-                    activeSection === link.href
+                  className={`px-4 py-3 text-sm font-medium rounded-lg transition-all ${activeSection === link.href
                       ? 'text-blue-400 bg-blue-500/10'
                       : 'text-slate-300 hover:text-blue-400 hover:bg-blue-500/5'
-                  }`}
+                    }`}
                 >
                   {link.label}
                 </a>

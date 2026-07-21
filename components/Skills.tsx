@@ -1,16 +1,16 @@
 'use client';
 
 import {
-  Code2,
-  Layers,
-  GitBranch,
-  Smartphone,
-  Database,
-  Cloud,
-  Languages,
   Boxes,
+  Cloud,
+  Code2,
   Cpu,
+  Database,
+  GitBranch,
+  Languages,
+  Layers,
   MapPin,
+  Smartphone,
 } from 'lucide-react';
 
 const TECH_SKILLS = [
@@ -41,8 +41,8 @@ const TOOLS = [
 const METHODOLOGIES = ['SOLID', 'Clean Architecture', 'Scrum', 'CI/CD', 'TDD', 'Git Flow'];
 
 const LANGUAGES = [
-  { name: 'Español', level: 'Nativo' },
-  { name: 'Inglés', level: 'Intermedio' },
+  { name: 'Spanish', level: 'Nativo' },
+  { name: 'English', level: 'Alto' },
 ];
 
 export default function Skills() {
@@ -58,14 +58,13 @@ export default function Skills() {
         <div className="opacity-0-init mb-16 text-center">
           <div className="flex items-center justify-center gap-2 text-blue-400 text-sm font-medium mb-3">
             <Smartphone className="w-4 h-4" />
-            <span className="uppercase tracking-wider">Habilidades</span>
+            <span className="uppercase tracking-wider">Skills</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Mi <span className="gradient-text">stack tecnológico</span>
+            My <span className="gradient-text">tech stack</span>
           </h2>
           <p className="text-slate-400 mt-4 max-w-xl mx-auto">
-            Tecnologías, frameworks y herramientas que uso a diario para construir
-            productos digitales de alto rendimiento.
+            Technologies, frameworks, and tools I use daily to build high-performance digital products.
           </p>
         </div>
 
@@ -94,7 +93,7 @@ export default function Skills() {
         {/* Frameworks */}
         <div className="opacity-0-init mb-12" style={{ transitionDelay: '0.2s' }}>
           <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
-            Frameworks & Arquitectura
+            Frameworks & Architecture
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {FRAMEWORKS.map((fw) => (
@@ -132,7 +131,7 @@ export default function Skills() {
           {/* Methodologies */}
           <div className="opacity-0-init" style={{ transitionDelay: '0.4s' }}>
             <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
-              Metodologías
+              Methodologies
             </h3>
             <div className="flex flex-wrap gap-2">
               {METHODOLOGIES.map((m) => (
@@ -150,7 +149,7 @@ export default function Skills() {
           <div className="opacity-0-init" style={{ transitionDelay: '0.5s' }}>
             <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4 flex items-center gap-2">
               <Languages className="w-4 h-4" />
-              Idiomas
+              Languages
             </h3>
             <div className="space-y-3">
               {LANGUAGES.map((lang) => (

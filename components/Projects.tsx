@@ -1,21 +1,21 @@
 'use client';
 
-import { ExternalLink, Star, FolderGit2 } from 'lucide-react';
+import { ExternalLink, FolderGit2, Star } from 'lucide-react';
 
 const PROJECTS = [
   {
     name: 'Andrea',
     description:
-      'App de mensajería en tiempo real con chat, notificaciones push y gestión de contactos. Publicada en Google Play Store.',
+      'Real-time messaging app with chat, push notifications, and contact management. Published on Google Play Store.',
     tags: ['Flutter', 'Firebase', 'Riverpod', 'Push Notifications'],
-    link: 'https://play.google.com/store/apps/details?id=com.idoogroup.andrea',
-    linkLabel: 'Ver en Play Store',
+    link: 'https://play.google.com/store/apps/details?id=com.npcs.andrea',
+    linkLabel: 'View on Play Store',
     featured: true,
   },
   {
     name: 'Mi Barbero',
     description:
-      'Plataforma de gestión para barberías: reservas, catálogo de servicios y perfil de profesionales.',
+      'Management platform for barbershops: bookings, service catalog, and professional profiles.',
     tags: ['Flutter', 'Supabase', 'Mapbox', 'Clean Architecture'],
     link: 'https://apklis.com/search?q=mi+barbero',
     linkLabel: 'Ver en APKLis',
@@ -24,7 +24,7 @@ const PROJECTS = [
   {
     name: 'Mi Manicura',
     description:
-      'App de servicios de manicura con reservas, catálogo y pagos integrados para clientes y profesionales.',
+      'Manicure services app with bookings, catalog, and integrated payments for clients and professionals.',
     tags: ['Flutter', 'Firebase', 'Payments', 'BLoC'],
     link: 'https://apklis.com/search?q=mi+manicura',
     linkLabel: 'Ver en APKLis',
@@ -33,10 +33,10 @@ const PROJECTS = [
   {
     name: 'GiChat',
     description:
-      'Cliente de mensajería ligero con encriptación, grupos y soporte multimedia. Enfoque en rendimiento y UX.',
+      'Lightweight messaging client with encryption, groups, and multimedia support. Focus on performance and UX.',
     tags: ['Flutter', 'Realtime', 'WebRTC', 'Provider'],
     link: 'https://github.com/ISTO21',
-    linkLabel: 'Ver en GitHub',
+    linkLabel: 'View on GitHub',
     featured: false,
   },
 ];
@@ -49,14 +49,13 @@ export default function Projects() {
         <div className="opacity-0-init mb-16 text-center">
           <div className="flex items-center justify-center gap-2 text-blue-400 text-sm font-medium mb-3">
             <FolderGit2 className="w-4 h-4" />
-            <span className="uppercase tracking-wider">Proyectos</span>
+            <span className="uppercase tracking-wider">Projects</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Trabajos <span className="gradient-text">destacados</span>
+            Featured <span className="gradient-text">work</span>
           </h2>
           <p className="text-slate-400 mt-4 max-w-xl mx-auto">
-            Una selección de proyectos que he construido y publicado. Cada uno representa
-            un reto técnico diferente y una solución real para usuarios finales.
+            A selection of projects I’ve built and published. Each one represents a different technical challenge and a real solution for end users.
           </p>
         </div>
 
@@ -76,7 +75,7 @@ export default function Projects() {
                 {project.featured && (
                   <span className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs font-medium">
                     <Star className="w-3 h-3 fill-yellow-400" />
-                    Destacado
+                    Featured
                   </span>
                 )}
               </div>
@@ -117,7 +116,7 @@ export default function Projects() {
 
         {/* Note */}
         <p className="text-center text-sm text-slate-500 mt-10 opacity-0-init" style={{ transitionDelay: '0.5s' }}>
-          Estos son ejemplos basados en mi CV. Puedes editar los enlaces y descripciones en{' '}
+          These are examples based on my CV. You can edit the links and descriptions in{' '}
           <code className="text-blue-400 text-xs">components/Projects.tsx</code>.
         </p>
       </div>

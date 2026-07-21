@@ -1,18 +1,18 @@
 'use client';
 
-import { Briefcase, MapPin, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const EXPERIENCES = [
   {
-    role: 'Semi-Senior Flutter Developer',
+    role: 'Semi Senior Flutter Developer',
     company: 'Idoo Group',
     location: 'Remoto',
     period: 'Jul 2024 — Presente',
     current: true,
     achievements: [
-      'Desarrollo y mantenimiento de aplicaciones Flutter con Clean Architecture y Riverpod.',
-      'Implementación de CI/CD con GitHub Actions para despliegues automáticos a producción.',
-      'Colaboración con equipos multidisciplinarios usando metodologías ágiles (Scrum).',
+      'Development and maintenance of Flutter applications with Clean Architecture and Riverpod.',
+      'Implementation of CI/CD with GitHub Actions for automatic production deployments.',
+      'Collaboration with cross-functional teams using agile methodologies (Scrum).',
     ],
   },
   {
@@ -22,33 +22,33 @@ const EXPERIENCES = [
     period: 'Ene 2023 — Jul 2024',
     current: false,
     achievements: [
-      'Desarrollo de apps móviles con Flutter para clientes internacionales.',
-      'Integración de Firebase, mapas interactivos (Mapbox) y pasarelas de pago.',
-      'Optimización del rendimiento y reducción de tiempos de carga en un 40%.',
+      'Development of mobile apps with Flutter for international clients.',
+      'Integration of Firebase, interactive maps (Mapbox), and payment gateways.',
+      'Performance optimization and 40% reduction in loading times.',
     ],
   },
   {
-    role: 'Flutter Developer Freelance',
+    role: 'Freelance Flutter Developer',
     company: 'Freelance',
     location: 'Remoto',
     period: '2022 — Presente',
     current: false,
     achievements: [
-      'Creación de apps a medida para clientes: mensajería, gestión y servicios.',
-      'Publicación de 7+ apps en Google Play Store y APKLis.',
-      'Mantenimiento continuo y soporte post-lanzamiento de productos.',
+      'Creation of custom apps for clients: messaging, management, and services.',
+      'Publishing of 7+ apps on Google Play Store and APKLis.',
+      'Ongoing maintenance and post-launch support for products.',
     ],
   },
   {
-    role: 'Asistente de Investigación',
+    role: 'Research Assistant',
     company: 'CIGED',
     location: 'La Habana, Cuba',
     period: '2022 — Presente',
     current: false,
     achievements: [
-      'Participación en proyectos de investigación aplicada en informática.',
-      'Desarrollo de soluciones de software para la gestión institucional.',
-      'Apoyo en la documentación técnica y publicación de resultados.',
+      'Participation in applied research projects in computer science.',
+      'Development of software solutions for institutional management.',
+      'Support in technical documentation and publication of results.',
     ],
   },
 ];
@@ -61,10 +61,10 @@ export default function Experience() {
         <div className="opacity-0-init mb-16">
           <div className="flex items-center gap-2 text-blue-400 text-sm font-medium mb-3">
             <Briefcase className="w-4 h-4" />
-            <span className="uppercase tracking-wider">Experiencia</span>
+            <span className="uppercase tracking-wider">Experience</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Mi <span className="gradient-text">trayectoria profesional</span>
+            My <span className="gradient-text">professional journey</span>
           </h2>
         </div>
 
@@ -77,17 +77,15 @@ export default function Experience() {
             {EXPERIENCES.map((exp, i) => (
               <div
                 key={exp.company}
-                className={`relative flex flex-col sm:flex-row items-start gap-6 ${
-                  i % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'
-                } opacity-0-init`}
+                className={`relative flex flex-col sm:flex-row items-start gap-6 ${i % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'
+                  } opacity-0-init`}
                 style={{ transitionDelay: `${i * 0.1}s` }}
               >
                 {/* Timeline dot */}
                 <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 z-10 mt-6">
                   <div
-                    className={`w-4 h-4 rounded-full border-2 border-[#080d1a] ${
-                      exp.current ? 'bg-green-500 glow-blue-sm' : 'bg-blue-500'
-                    }`}
+                    className={`w-4 h-4 rounded-full border-2 border-[#080d1a] ${exp.current ? 'bg-green-500 glow-blue-sm' : 'bg-blue-500'
+                      }`}
                   />
                 </div>
 
@@ -108,7 +106,7 @@ export default function Experience() {
                       </div>
                       {exp.current && (
                         <span className="px-2.5 py-1 rounded-full bg-green-500/15 text-green-400 text-xs font-medium whitespace-nowrap">
-                          Actual
+                          Current
                         </span>
                       )}
                     </div>

@@ -3,10 +3,10 @@
 import { GraduationCap, Sparkles } from 'lucide-react';
 
 const STATS = [
-  { value: '4+', label: 'Años de experiencia' },
-  { value: '7+', label: 'Apps publicadas' },
-  { value: '1,000+', label: 'Descargas totales' },
-  { value: '3', label: 'Clientes activos' },
+  { value: '4+', label: 'Years of experience' },
+  { value: '7+', label: 'Apps published' },
+  { value: '1,000+', label: 'Total downloads' },
+  { value: '3', label: 'Active clients' },
 ];
 
 export default function About() {
@@ -17,10 +17,10 @@ export default function About() {
         <div className="opacity-0-init mb-16">
           <div className="flex items-center gap-2 text-blue-400 text-sm font-medium mb-3">
             <Sparkles className="w-4 h-4" />
-            <span className="uppercase tracking-wider">Sobre mí</span>
+            <span className="uppercase tracking-wider">About</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Un desarrollador enfocado en <span className="gradient-text">calidad y escalabilidad</span>
+            A developer focused on <span className="gradient-text">quality and scalability</span>
           </h2>
         </div>
 
@@ -28,22 +28,13 @@ export default function About() {
           {/* Bio */}
           <div className="lg:col-span-2 space-y-5 opacity-0-init" style={{ transitionDelay: '0.1s' }}>
             <p className="text-lg text-slate-300 leading-relaxed">
-              Soy <span className="text-blue-400 font-medium">Luis Tomás</span>, ingeniero en
-              ciencias informáticas y desarrollador Flutter con más de 4 años de experiencia
-              creando aplicaciones móviles para Android, iOS y Web. Mi enfoque se centra en
-              escribir código limpio, mantenible y escalable siguiendo principios SOLID y
-              Clean Architecture.
+              I’m <span className="text-blue-400 font-medium">Luis Tomás</span>, a computer science engineer and Flutter developer with over 4 years of experience building mobile applications for Android, iOS, and Web. My focus is on writing clean, maintainable, and scalable code following SOLID principles and Clean Architecture.
             </p>
             <p className="text-lg text-slate-300 leading-relaxed">
-              He trabajado en proyectos que van desde apps de mensajería en tiempo real con
-              Firebase hasta plataformas de gestión empresarial con mapas interactivos y
-              pagos integrados. Disfruto resolver problemas complejos y transformar ideas
-              en productos digitales que las personas usan a diario.
+              I’ve worked on projects ranging from real-time messaging apps with Firebase to business management platforms with interactive maps and integrated payments. I enjoy solving complex problems and turning ideas into digital products people use every day.
             </p>
             <p className="text-lg text-slate-300 leading-relaxed">
-              Actualmente trabajo de forma remota desde Cuba, colaborando con equipos
-              internacionales. Soy un aprendiz continuo, siempre explorando nuevas
-              tecnologías y mejores prácticas para entregar productos de alto impacto.
+              I currently work remotely from Cuba, collaborating with international teams. I’m a lifelong learner, always exploring new technologies and best practices to deliver high-impact products.
             </p>
           </div>
 
@@ -54,10 +45,10 @@ export default function About() {
                 <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-blue-500/15 text-blue-400">
                   <GraduationCap className="w-5 h-5" />
                 </div>
-                <h3 className="font-semibold text-slate-100">Educación</h3>
+                <h3 className="font-semibold text-slate-100">Education</h3>
               </div>
-              <p className="text-slate-200 font-medium">Ingeniero en Ciencias Informáticas</p>
-              <p className="text-sm text-slate-400 mt-1">Universidad de Ciencias Informáticas</p>
+              <p className="text-slate-200 font-medium">Computer Science Engineer</p>
+              <p className="text-sm text-slate-400 mt-1">University of Computer Science</p>
               <p className="text-sm text-blue-400 mt-2">2021 — 2024</p>
             </div>
           </div>

@@ -8,21 +8,21 @@ const CONTACTS = [
     label: 'Email',
     value: 'luistomaslezcano@gmail.com',
     href: 'mailto:luistomaslezcano@gmail.com',
-    action: 'Enviar correo',
+    action: 'Send email',
   },
   {
     icon: MessageCircle,
     label: 'WhatsApp',
     value: '+52 55 2398 3838',
     href: 'https://wa.me/+5355239838',
-    action: 'Abrir chat',
+    action: 'Open chat',
   },
   {
     icon: Github,
     label: 'GitHub',
     value: 'github.com/ISTO21',
     href: 'https://github.com/ISTO21',
-    action: 'Ver perfil',
+    action: 'View profile',
   },
 ];
 
@@ -38,11 +38,11 @@ export default function Contact() {
         {/* Header */}
         <div className="opacity-0-init mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-            ¿Construimos algo <span className="gradient-text">genial juntos?</span>
+            Shall we build something <span className="gradient-text">great together?</span>
           </h2>
           <p className="text-slate-400 max-w-xl mx-auto">
-            Estoy disponible para proyectos freelance y posiciones remotas.
-            Escríbeme y hablemos sobre tu próxima idea.
+            I’m available for freelance projects and remote roles.
+            Send me a message and let’s talk about your next idea.
           </p>
         </div>
 
@@ -82,14 +82,14 @@ export default function Contact() {
             className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold shadow-lg shadow-blue-500/25 hover:scale-105 transition"
           >
             <MessageCircle className="w-5 h-5" />
-            Contactar por WhatsApp
+            Contact on WhatsApp
           </a>
           <a
             href="mailto:luistomaslezcano@gmail.com"
             className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl glass-card text-slate-200 font-semibold hover:border-blue-500/50 hover:scale-105 transition"
           >
             <Mail className="w-5 h-5" />
-            Enviar Email
+            Send Email
           </a>
         </div>
       </div>
@@ -98,7 +98,7 @@ export default function Contact() {
       <footer className="relative max-w-5xl mx-auto mt-24 pt-8 border-t border-blue-500/10">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-500 flex items-center gap-1.5">
-            © {new Date().getFullYear()} Luis Tomás · Hecho con
+            © {new Date().getFullYear()} Luis Tomás · Made with
             <Heart className="w-3.5 h-3.5 text-blue-400 fill-blue-400" />
             y Flutter mindset
           </p>
@@ -106,7 +106,7 @@ export default function Contact() {
             href="#hero"
             className="flex items-center gap-1.5 text-sm text-slate-400 hover:text-blue-400 transition"
           >
-            Volver arriba
+            Back to top
             <ArrowUp className="w-4 h-4" />
           </a>
         </div>

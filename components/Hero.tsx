@@ -44,7 +44,7 @@ export default function Hero() {
         {/* Name and title */}
         <div className="animate-fade-in-up" style={{ animationDelay: '0.1s', opacity: 0, animationFillMode: 'forwards' }}>
           <p className="text-blue-400 font-medium text-sm sm:text-base mb-3 tracking-wide uppercase">
-            Disponible para proyectos remotos
+            Available for remote projects
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 tracking-tight">
             <span className="gradient-text">Luis Tomás</span>
@@ -59,8 +59,8 @@ export default function Hero() {
           className="max-w-2xl mx-auto text-base sm:text-lg text-slate-400 leading-relaxed mb-10 animate-fade-in-up"
           style={{ animationDelay: '0.2s', opacity: 0, animationFillMode: 'forwards' }}
         >
-          4+ años construyendo aplicaciones móviles escalables para Android, iOS y Web.
-          Especialista en Clean Architecture, Riverpod y CI/CD — de Cuba para el mundo.
+          4+ years building scalable mobile apps for Android, iOS, and Web.
+          Specialist in Clean Architecture, Riverpod, and CI/CD — from Cuba to the world.
         </p>
 
         {/* CTA buttons */}
@@ -75,7 +75,7 @@ export default function Hero() {
             className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 hover:scale-105 transition-all duration-200"
           >
             <MessageCircle className="w-5 h-5" />
-            Contactar por WhatsApp
+            Contact on WhatsApp
           </a>
           <a
             href="/Luis_Tomás_CVi.pdf"
@@ -83,7 +83,7 @@ export default function Hero() {
             className="group flex items-center gap-2 px-6 py-3 rounded-xl glass-card text-slate-200 font-semibold hover:border-blue-500/50 hover:scale-105 transition-all duration-200"
           >
             <Download className="w-5 h-5 group-hover:text-blue-400 transition" />
-            Descargar CV
+            Download CV
           </a>
         </div>
 
@@ -104,7 +104,7 @@ export default function Hero() {
           <a
             href="mailto:luistomaslezcano@gmail.com"
             className="text-slate-400 hover:text-blue-400 transition"
-            aria-label="Email"
+            aria-label="Correo electrónico"
           >
             <Mail className="w-5 h-5" />
           </a>

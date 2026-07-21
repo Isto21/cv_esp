@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1',
   title: 'Luis Tomás — Flutter & Mobile Developer',
   description:
-    'Portfolio profesional de Luis Tomás. Flutter Developer con 4+ años de experiencia construyendo aplicaciones móviles escalables para Android, iOS y Web.',
+    'Professional portfolio of Luis Tomás. Flutter developer with 4+ years of experience building scalable mobile applications for Android, iOS, and Web.',
   openGraph: {
     title: 'Luis Tomás — Flutter & Mobile Developer',
     description:
-      'Portfolio profesional de Luis Tomás. Flutter Developer con 4+ años de experiencia.',
+      'Professional portfolio of Luis Tomás. Flutter developer with 4+ years of experience.',
     images: [{ url: 'https://bolt.new/static/og_default.png' }],
   },
   twitter: {
