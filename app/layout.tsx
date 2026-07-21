@@ -1,11 +1,12 @@
-import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://portfolio.luis-tomas.dev'),
+  viewport: 'width=device-width, initial-scale=1',
   title: 'Luis Tomás — Flutter & Mobile Developer',
   description:
     'Portfolio profesional de Luis Tomás. Flutter Developer con 4+ años de experiencia construyendo aplicaciones móviles escalables para Android, iOS y Web.',
