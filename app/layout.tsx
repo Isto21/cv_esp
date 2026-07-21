@@ -3,9 +3,9 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-
 export const metadata: Metadata = {
-  metadataBase: new URL('https://portfolio.luis-tomas.dev'),
+  verification: { google: 'bX90zsH_LQMIlVOZm4mF_gFb_-ru1t1DCjWotqbXj_g' },
+  metadataBase: new URL('https://portfolio-tawny-eight-47.vercel.app'),
   viewport: 'width=device-width, initial-scale=1',
   title: 'Luis Tomás — Flutter & Mobile Developer',
   description:
@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: 'Luis Tomás — Flutter & Mobile Developer',
     description:
       'Professional portfolio of Luis Tomás. Flutter developer with 4+ years of experience.',
-    images: [{ url: 'https://bolt.new/static/og_default.png' }],
+    // images: [{ url: 'https://bolt.new/static/og_default.png' }],
   },
   twitter: {
     card: 'summary_large_image',
-    images: [{ url: 'https://bolt.new/static/og_default.png' }],
+    // images: [{ url: 'https://bolt.new/static/og_default.png' }],
   },
 };
 
