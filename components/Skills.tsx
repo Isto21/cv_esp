@@ -14,10 +14,11 @@ import {
 } from 'lucide-react';
 
 const TECH_SKILLS = [
-  { name: 'Dart', level: 90 },
-  { name: 'Flutter', level: 92 },
-  { name: 'Kotlin', level: 70 },
-  { name: 'Java', level: 65 },
+  { name: 'Dart', level: 95 },
+  { name: 'Flutter', level: 96 },
+  { name: 'Kotlin', level: 80 },
+  { name: 'Go', level: 80 },
+  { name: 'Java', level: 75 },
   { name: 'SQL', level: 75 },
   { name: 'C++', level: 60 },
 ];
