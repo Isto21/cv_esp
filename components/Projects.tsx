@@ -114,11 +114,6 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Note */}
-        <p className="text-center text-sm text-slate-500 mt-10 opacity-0-init" style={{ transitionDelay: '0.5s' }}>
-          These are examples based on my CV. You can edit the links and descriptions in{' '}
-          <code className="text-blue-400 text-xs">components/Projects.tsx</code>.
-        </p>
       </div>
     </section>
   );
